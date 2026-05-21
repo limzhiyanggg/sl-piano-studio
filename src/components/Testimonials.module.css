@@ -15,17 +15,32 @@
   text-align: center;
 }
 
-.rail {
+/* Break out of section padding to span full viewport width */
+.railWrapper {
+  overflow: hidden;
+  margin-left: calc(-1 * var(--section-side-lg));
+  width: calc(100% + 2 * var(--section-side-lg));
+}
+
+/* Animated track — contains two copies of items for seamless loop */
+.track {
+  display: flex;
+  gap: var(--card-gap);
+  width: max-content;
+  animation: scroll 35s linear infinite;
+  padding-bottom: 8px;
+}
+
+/* Each copy of the items */
+.set {
   display: flex;
   gap: var(--card-gap);
   align-items: stretch;
-  overflow-x: auto;
-  padding-bottom: 8px;
-  scrollbar-width: none;
 }
 
-.rail::-webkit-scrollbar {
-  display: none;
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .photo {
@@ -45,5 +60,10 @@
 @media (max-width: 768px) {
   .section {
     padding: var(--section-pad) var(--section-side-sm);
+  }
+
+  .railWrapper {
+    margin-left: calc(-1 * var(--section-side-sm));
+    width: calc(100% + 2 * var(--section-side-sm));
   }
 }
