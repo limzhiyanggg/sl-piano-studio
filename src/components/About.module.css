@@ -33,7 +33,7 @@
   min-width: 0;
   height: 565px;
   border-radius: var(--radius-card);
-  background: url('../assets/images/portrait-serene.png') center / cover no-repeat;
+  background: url('../assets/images/portrait-serene.png') top center / cover no-repeat;
   overflow: hidden;
 }
 
