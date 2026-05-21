@@ -20,6 +20,7 @@ export default function App() {
       <Testimonials />
       <Rates />
       <HowItWorks />
+      <div style={{ textAlign: 'center', color: '#B89A7A', fontSize: '20px', letterSpacing: '16px', padding: '0 0 0 16px' }}>✻ ✻ ✻</div>
       <FAQ />
       <Contact />
       <WhatsAppFAB />
