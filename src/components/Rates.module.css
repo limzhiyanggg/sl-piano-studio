@@ -47,3 +47,22 @@
   line-height: var(--text-body-md-lh);
   color: var(--color-text-mid);
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--section-pad) var(--section-side-sm);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .card:last-child {
+    border-bottom: none;
+  }
+}

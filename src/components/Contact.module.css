@@ -82,3 +82,10 @@
   color: rgba(255, 255, 255, 0.4);
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    min-height: 400px;
+    padding: var(--section-pad) var(--section-side-sm);
+  }
+}

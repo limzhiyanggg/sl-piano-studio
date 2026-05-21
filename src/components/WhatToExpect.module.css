@@ -59,3 +59,21 @@
   line-height: var(--text-body-md-lh);
   color: var(--color-text-mid);
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--section-pad) var(--section-side-sm);
+  }
+
+  .row,
+  .rowCenter {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    flex: none;
+    width: 100%;
+  }
+}

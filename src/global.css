@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -82,6 +86,30 @@ button {
   --radius-card:   28px;
   --radius-avatar: 50px;
   --radius-icon:   4px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad:         60px;
+    --section-side-lg:     24px;
+    --section-side-sm:     20px;
+    --col-gap:             32px;
+    --text-display-size:   44px;
+    --text-display-lh:     48px;
+    --text-display-ls:     -0.8px;
+    --text-h2-size:        36px;
+    --text-h2-lh:          42px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-pad:         48px;
+    --section-side-lg:     16px;
+    --section-side-sm:     16px;
+    --text-display-size:   36px;
+    --text-display-lh:     40px;
+  }
 }
 
 body {

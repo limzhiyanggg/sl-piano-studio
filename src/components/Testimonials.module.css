@@ -41,3 +41,9 @@
   flex: 0 0 260px;
   height: 347px;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--section-pad) var(--section-side-sm);
+  }
+}

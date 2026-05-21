@@ -36,3 +36,16 @@
   background: url('../assets/images/portrait-serene.png') center / cover no-repeat;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: var(--section-pad) var(--section-side-sm) 0;
+  }
+
+  .portrait {
+    width: 100%;
+    height: 320px;
+    flex: none;
+  }
+}

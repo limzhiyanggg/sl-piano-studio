@@ -33,3 +33,14 @@
 .list {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--section-pad) var(--section-side-sm);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
