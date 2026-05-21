@@ -11,6 +11,7 @@
   font-weight: 400;
   color: var(--color-text-dark);
   margin-bottom: var(--col-gap);
+  text-align: center;
 }
 
 .steps {

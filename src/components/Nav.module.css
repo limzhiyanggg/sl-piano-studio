@@ -6,7 +6,7 @@
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
   padding: 20px var(--section-side-sm);
 }
 
@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  margin-left: auto;
 }
 
 .links a {

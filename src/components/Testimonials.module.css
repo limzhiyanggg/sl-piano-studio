@@ -12,12 +12,13 @@
   font-weight: 400;
   color: var(--color-text-dark);
   margin-bottom: 44px;
+  text-align: center;
 }
 
 .rail {
   display: flex;
   gap: var(--card-gap);
-  align-items: flex-start;
+  align-items: stretch;
   overflow-x: auto;
   padding-bottom: 8px;
   scrollbar-width: none;
