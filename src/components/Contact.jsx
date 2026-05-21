@@ -15,7 +15,14 @@ export default function Contact() {
           lesson, just drop me a message. I typically get back within a day or
           two.
         </p>
-        <button className={styles.btn}>Message me on WhatsApp</button>
+        <a
+          href="https://wa.me/6589199100"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.btn}
+        >
+          Message me on WhatsApp
+        </a>
         <p className={styles.email}>
           Or email me at{' '}
           <a href="mailto:serene.pianostudio@gmail.com">

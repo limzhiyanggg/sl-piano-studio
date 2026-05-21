@@ -44,6 +44,8 @@
 }
 
 .btn {
+  display: inline-block;
+  text-decoration: none;
   font-family: var(--font-sans);
   font-size: var(--text-body-sm-size);
   font-weight: 500;
@@ -75,12 +77,13 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 24px;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  padding-bottom: 24px;
   font-family: var(--font-sans);
   font-size: var(--text-caption-size);
   color: rgba(255, 255, 255, 0.4);
-  z-index: 1;
 }
 
 @media (max-width: 768px) {
