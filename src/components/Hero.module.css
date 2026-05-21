@@ -1,0 +1,68 @@
+.hero {
+  position: relative;
+  height: 819px;
+  background: url('../assets/images/hero.png') center / cover no-repeat;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  position: absolute;
+  bottom: 80px;
+  left: var(--section-side-lg);
+  max-width: 680px;
+  z-index: 1;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-size);
+  line-height: var(--text-display-lh);
+  letter-spacing: var(--text-display-ls);
+  font-weight: 400;
+  color: white;
+}
+
+.subtext {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-body-lg-lh);
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: var(--element-gap);
+  max-width: 520px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--element-gap);
+  margin-top: 32px;
+}
+
+.btn {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm-size);
+  font-weight: 500;
+  color: white;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}
+
+.trial {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm-size);
+  color: rgba(255, 255, 255, 0.8);
+}

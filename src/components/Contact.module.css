@@ -1,0 +1,84 @@
+.contact {
+  position: relative;
+  min-height: 477px;
+  background: url('../assets/images/footer.png') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--section-pad) var(--section-side-lg);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-lh);
+  letter-spacing: var(--text-h2-ls);
+  font-weight: 400;
+  color: white;
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md-size);
+  line-height: var(--text-body-md-lh);
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: var(--element-gap);
+  max-width: 480px;
+}
+
+.btn {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm-size);
+  font-weight: 500;
+  color: white;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 16px 32px;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}
+
+.email {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm-size);
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: var(--item-gap);
+}
+
+.email a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 24px;
+  font-family: var(--font-sans);
+  font-size: var(--text-caption-size);
+  color: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}

@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: var(--col-gap);
+  padding: var(--section-pad) var(--section-side-lg) 0;
+  background: var(--color-bg-white);
+}
+
+.content {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-lh);
+  letter-spacing: var(--text-h2-ls);
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md-size);
+  line-height: var(--text-body-md-lh);
+  color: var(--color-text-mid);
+  margin-top: var(--element-gap);
+}
+
+.portrait {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 565px;
+  border-radius: var(--radius-card);
+  background: url('../assets/images/portrait-serene.png') center / cover no-repeat;
+  overflow: hidden;
+}

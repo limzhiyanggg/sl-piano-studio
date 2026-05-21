@@ -1,0 +1,42 @@
+.section {
+  padding: var(--section-pad) var(--section-side-lg);
+  background: var(--color-bg-white);
+  overflow: hidden;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-lh);
+  letter-spacing: var(--text-h2-ls);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin-bottom: 44px;
+}
+
+.rail {
+  display: flex;
+  gap: var(--card-gap);
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+.photo {
+  flex: 0 0 320px;
+  height: 438px;
+  border-radius: var(--radius-card);
+  background: var(--color-bg-warm);
+  overflow: hidden;
+  /* replace background with img tag once assets are available */
+}
+
+.photoTall {
+  flex: 0 0 260px;
+  height: 347px;
+}
