@@ -5,7 +5,7 @@ import policyUrl from '../files/Studio Policy - v1.0.pdf?url';
 const faqs = [
   {
     question: 'Does my child need a piano at home?',
-    answer: 'Yes.',
+    answer: 'Yes. Students should have an upright or digital piano with weighted keys and a sustain pedal.',
   },
   {
     question: 'What age can my child start?',
