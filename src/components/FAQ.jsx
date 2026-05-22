@@ -1,6 +1,6 @@
 import styles from './FAQ.module.css';
 import FAQItem from './FAQItem';
-import policyUrl from '../files/Studio Policy - v1.0?url';
+import policyUrl from '../files/Studio Policy - v1.0.pdf?url';
 
 const faqs = [
   {

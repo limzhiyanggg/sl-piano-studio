@@ -22,24 +22,27 @@
   width: calc(100% + 2 * var(--section-side-lg));
 }
 
-/* rAF drives the transform — no CSS animation */
-.track {
+/* Override library defaults so all items stretch to the tallest card's height */
+.railWrapper :global(.rfm-marquee),
+.railWrapper :global(.rfm-initial-child-container) {
+  align-items: stretch;
+}
+.railWrapper :global(.rfm-child) {
   display: flex;
-  width: max-content;
-  will-change: transform;
-  padding-bottom: 8px;
+  align-items: stretch;
 }
 
-/* padding-right ensures loop geometry: track = 2 × setWidth exactly */
-.set {
+.item {
+  width: 320px;
+  flex-shrink: 0;
+  margin-right: var(--card-gap);
   display: flex;
-  gap: var(--card-gap);
-  padding-right: var(--card-gap);
   align-items: stretch;
 }
 
 .photo {
-  flex: 0 0 320px;
+  width: 100%;
+  height: 100%;
   border-radius: var(--radius-card);
   background: var(--color-bg-warm);
   overflow: hidden;

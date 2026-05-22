@@ -34,7 +34,7 @@
   font-size: var(--text-body-lg-size);
   line-height: var(--text-body-lg-lh);
   color: rgba(255, 255, 255, 0.85);
-  margin-top: var(--element-gap);
+  margin-top: 16px;
   max-width: 520px;
 }
 
@@ -42,7 +42,7 @@
   display: flex;
   align-items: center;
   gap: var(--element-gap);
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .btn {

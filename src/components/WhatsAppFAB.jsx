@@ -1,9 +1,10 @@
 import styles from './WhatsAppFAB.module.css';
+import { getWhatsAppURL } from '../utils/whatsapp';
 
 export default function WhatsAppFAB() {
   return (
     <a
-      href="https://wa.me/6589199100"
+      href={getWhatsAppURL('6589199100')}
       target="_blank"
       rel="noopener noreferrer"
       className={styles.fab}

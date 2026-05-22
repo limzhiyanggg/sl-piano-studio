@@ -1,4 +1,5 @@
 import styles from './Contact.module.css';
+import { getWhatsAppURL, getEmailURL } from '../utils/whatsapp';
 
 export default function Contact() {
   return (
@@ -24,7 +25,7 @@ export default function Contact() {
           two.
         </p>
         <a
-          href="https://wa.me/6589199100"
+          href={getWhatsAppURL('6589199100')}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.btn}
@@ -33,7 +34,7 @@ export default function Contact() {
         </a>
         <p className={styles.email}>
           Or email me at{' '}
-          <a href="mailto:serene.pianostudio@gmail.com">
+          <a href={getEmailURL('serene.pianostudio@gmail.com')}>
             serene.pianostudio@gmail.com
           </a>
         </p>
