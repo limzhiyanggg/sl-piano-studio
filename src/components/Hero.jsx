@@ -24,7 +24,10 @@ export default function Hero() {
         </p>
         <div className={styles.actions}>
           <button className={styles.btn} onClick={handleEnquireClick}>Enquire</button>
-          <span className={styles.trial}>• Trial lesson available</span>
+          <span className={styles.trial}>
+            <span className={styles.liveDot} />
+            Trial lesson available
+          </span>
         </div>
       </div>
       <svg

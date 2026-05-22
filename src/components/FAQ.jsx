@@ -1,5 +1,6 @@
 import styles from './FAQ.module.css';
 import FAQItem from './FAQItem';
+import policyUrl from '../files/Studio Policy - v1.0?url';
 
 const faqs = [
   {
@@ -28,8 +29,15 @@ const faqs = [
   },
   {
     question: 'What is your lesson policy?',
-    answer:
-      'For details on cancellation, rescheduling, and payment, you can read the full details here.',
+    answer: (
+      <>
+        For details on cancellation, rescheduling, and payment, you can read the{' '}
+        <a href={policyUrl} target="_blank" rel="noopener noreferrer">
+          full details here
+        </a>
+        .
+      </>
+    ),
   },
   {
     question: 'When and how do I make payment?',
