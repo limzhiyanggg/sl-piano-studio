@@ -27,6 +27,14 @@ export default function Hero() {
           <span className={styles.trial}>• Trial lesson available</span>
         </div>
       </div>
+      <svg
+        className={styles.divider}
+        viewBox="0 0 1440 72"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0,72 Q720,0 1440,72 Z" fill="#FFFFFF" />
+      </svg>
     </section>
   );
 }

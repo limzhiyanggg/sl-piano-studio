@@ -3,6 +3,14 @@ import styles from './Contact.module.css';
 export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
+      <svg
+        className={styles.divider}
+        viewBox="0 0 1440 72"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0,0 Q720,72 1440,0 Z" fill="#FFFFFF" />
+      </svg>
       {/* contact-bg: place contact-bg.jpg in src/assets/images/ then set as background-image in Contact.module.css */}
       <div className={styles.overlay} />
 

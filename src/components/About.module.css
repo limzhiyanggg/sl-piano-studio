@@ -1,14 +1,15 @@
 .about {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--col-gap);
+  text-align: center;
   padding: var(--section-pad) var(--section-side-lg) 0;
   background: var(--color-bg-white);
 }
 
 .content {
-  flex: 1 1 0;
-  min-width: 0;
+  max-width: 660px;
+  width: 100%;
 }
 
 .heading {
@@ -29,23 +30,18 @@
 }
 
 .portrait {
-  flex: 1 1 0;
-  min-width: 0;
-  height: 565px;
-  border-radius: var(--radius-card);
-  background: url('../assets/images/portrait-serene.png') top center / cover no-repeat;
-  overflow: hidden;
+  display: block;
+  margin: var(--element-gap) auto 0;
+  max-width: 460px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .about {
-    flex-direction: column;
     padding: var(--section-pad) var(--section-side-sm) 0;
   }
 
   .portrait {
-    width: 100%;
-    height: 320px;
-    flex: none;
+    max-width: 320px;
   }
 }

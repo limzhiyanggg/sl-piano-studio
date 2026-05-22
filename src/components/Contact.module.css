@@ -10,6 +10,16 @@
   text-align: center;
 }
 
+.divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  display: block;
+  z-index: 2;
+}
+
 .overlay {
   position: absolute;
   inset: 0;
@@ -90,5 +100,9 @@
   .contact {
     min-height: 400px;
     padding: var(--section-pad) var(--section-side-sm);
+  }
+
+  .content {
+    padding-top: 48px;
   }
 }

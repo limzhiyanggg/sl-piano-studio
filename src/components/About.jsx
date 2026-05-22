@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import portraitSerene from '../assets/images/portrait-serene.png';
 
 export default function About() {
   return (
@@ -17,9 +18,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className={styles.portrait}>
-        {/* serene-portrait: place serene-portrait.jpg in src/assets/images/ then set as background-image */}
-      </div>
+      <img src={portraitSerene} alt="Serene" className={styles.portrait} />
     </section>
   );
 }
