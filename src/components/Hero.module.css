@@ -129,4 +129,8 @@
     align-items: flex-start;
     gap: 12px;
   }
+
+  .trial {
+    margin-top: 28px;
+  }
 }
